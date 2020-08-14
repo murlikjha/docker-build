@@ -7,14 +7,14 @@ steps:
     title: Cloning main repository...
     stage: prepare
     type: git-clone
-    repo: 'codefresh-contrib/gradle-sample-app'
+    repo: 'murlikjha/gs-gradle'
     revision: master
     git: github
   BuildingDockerImage:
     title: Building Docker Image
     stage: build
     type: build
-    image_name: gradle-sample-app
+    image_name: mydoc
     working_directory: ./
     tag: 'multi-stage'
     dockerfile: Dockerfile
